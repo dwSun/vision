@@ -86,7 +86,7 @@ class DatasetFolder(VisionDataset):
         classes (list, optional): A list for labels of classes.
 
      Attributes:
-        classes (list): List of the class names.
+        classes (list): List of the class names sorted alphabetically.
         class_to_idx (dict): Dict with items (class_name, class_index).
         samples (list): List of (sample path, class_index) tuples
         targets (list): The class_index value for each image in the dataset
@@ -229,7 +229,7 @@ class ImageFolder(DatasetFolder):
         classes (list, optional): A list for labels of classes.
 
      Attributes:
-        classes (list): List of the class names.
+        classes (list): List of the class names sorted alphabetically.
         class_to_idx (dict): Dict with items (class_name, class_index).
         imgs (list): List of (image path, class_index) tuples
     """
